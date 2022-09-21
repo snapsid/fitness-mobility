@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app/appoint.dart';
 import 'package:flutter_app/first.dart';
+import 'package:flutter_app/forgetpass.dart';
 import 'package:flutter_app/home.dart';
 import 'package:flutter_app/homelist/footpain.dart';
 import 'package:flutter_app/homelist/hippain.dart';
@@ -33,7 +34,8 @@ void main() async {
       'foot': (context) => Footpain(),
       'neck': (context) => NeckPain(),
       'pelvic': (context) => PelvicPain(),
-      'appoin': (context) => Appoint()
+      'appoin': (context) => Appoint(),
+      'forget': (context) => ForgetPass()
     },
   ));
 }

@@ -82,6 +82,25 @@ class MyLogin extends StatelessWidget {
                   minWidth: 130,
                 ),
               ),
+              SizedBox(
+                height: 10,
+              ),
+              Row(
+                children: [
+                  Expanded(child: Container()),
+                  TextButton(
+                      onPressed: () {
+                        Navigator.pushNamed(context, "forget");
+                      },
+                      child: Text(
+                        "Forgot Password",
+                        style: TextStyle(
+                            fontSize: 18,
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold),
+                      ))
+                ],
+              )
             ],
           ),
         ),
